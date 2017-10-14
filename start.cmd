@@ -1,1 +1,0 @@
-java -Dfile.encoding=UTF8 -Xmx1g -jar Photato-Release.jar "C:\Users\%username%\Pictures"

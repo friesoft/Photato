@@ -1,0 +1,7 @@
+{
+	"name": "Photato",
+	"description": "Typescript build",
+	"scripts": {
+		"build": "target/bin/tsc -p ."
+	}
+}

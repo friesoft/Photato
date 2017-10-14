@@ -37,6 +37,51 @@
 					<executable>true</executable>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>com.github.eirslett</groupId>
+				<artifactId>frontend-maven-plugin</artifactId>
+				<version>1.6</version>
+				<configuration>
+					<nodeVersion>v6.11.4</nodeVersion>
+					<npmVersion>5.5.1</npmVersion>
+					<installDirectory>target</installDirectory>
+					<workingDirectory>${basedir}</workingDirectory>
+				</configuration>
+				<executions>
+					<!-- install node & npm -->
+					<execution>
+						<id>install node and npm</id>
+						<goals>
+							<goal>install-node-and-npm</goal>
+						</goals>
+					</execution>
+
+					<!--npm install -->
+					<execution>
+						<id>npm install</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<configuration>
+							<arguments>install -g typescript</arguments>
+						</configuration>
+					</execution>
+
+					<!-- npm run build -->
+					<execution>
+						<id>npm run typescript</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<configuration>
+							<arguments>run build</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
 		</plugins>
 	</build>
 

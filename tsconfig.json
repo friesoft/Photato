@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "removeComments": true,
+        
+        "preserveConstEnums": true,
+        "outFile": "src/main/resources/js/app.js",
+        "sourceMap": true
+    },
+    "include": [
+        "src/main/resources/js/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

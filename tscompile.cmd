@@ -1,1 +1,0 @@
-tsc.cmd www/js/ts/app.ts --outFile www/js/app.js --watch --removeComments --allowJs

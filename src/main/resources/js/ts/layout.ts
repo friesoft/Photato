@@ -15,7 +15,7 @@ class LayoutManager {
 
         var pictures = container.find('img');
 
-        var currentRow = [];
+        var currentRow: any = [];
         var currentSum: number = 0;
 
         pictures.each((i, e) => {

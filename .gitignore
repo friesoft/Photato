@@ -1,12 +1,13 @@
-/nbproject/private/
-/www/nbproject/private/
 /build/
-/dist/
 /ivy/
-/lib/
 /cache/
 /logs/
 /www/js/app.js
 /www/css/style.css
 *.tmp
 *.exe
+/bin/
+/target/
+.classpath
+.project
+.settings

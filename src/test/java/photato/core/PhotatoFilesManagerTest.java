@@ -1,14 +1,6 @@
 package photato.core;
 
-import photato.core.PhotatoFilesManager;
-import com.google.common.jimfs.Configuration;
-import com.google.common.jimfs.Jimfs;
 import java.io.IOException;
-import photato.core.entities.PhotatoFolder;
-import photato.core.entities.PhotatoPicture;
-import photato.core.metadata.IMetadataAggregator;
-import photato.core.metadata.Metadata;
-import photato.helpers.Tuple;
 import java.nio.file.FileSystem;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,14 +11,25 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.FileEntity;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
+
+import com.google.common.jimfs.Configuration;
+import com.google.common.jimfs.Jimfs;
+
+import photato.core.entities.PhotatoFolder;
 import photato.core.entities.PhotatoMedia;
+import photato.core.metadata.IMetadataAggregator;
+import photato.core.metadata.Metadata;
 import photato.core.resize.fullscreen.IFullScreenImageGetter;
 import photato.core.resize.thumbnails.IThumbnailGenerator;
+import photato.helpers.Tuple;
 
+@Ignore
 public class PhotatoFilesManagerTest {
 
     private static class ThumbnailsGeneratorMock implements IThumbnailGenerator {

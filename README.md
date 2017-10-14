@@ -1,3 +1,15 @@
+# Fork
+**Completely broken atm!**
+Moving the project to 
+* Java 9
+* Maven
+* Spring Boot
+* Spring Framework 5 (Security, HATEOAS)
+* MongoDB backend
+* Thymeleaf
+* Linux compatibility (original repository only supports windows exif tool)
+
+
 # Photato
 
 Photato aims to be a self-hosted photo gallery, accessible through a **responsive WebUI**. 

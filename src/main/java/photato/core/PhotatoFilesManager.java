@@ -1,20 +1,10 @@
 package photato.core;
 
-import photato.helpers.SearchQueryHelper;
-import photato.Photato;
-import photato.core.entities.PhotatoFolder;
-import photato.core.entities.PhotatoPicture;
-import photato.core.entities.PictureInfos;
-import photato.core.metadata.IMetadataAggregator;
-import photato.core.metadata.Metadata;
-import photato.helpers.FileHelper;
-import photato.helpers.Tuple;
 import java.io.Closeable;
 import java.io.IOException;
 import java.nio.file.FileSystem;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.nio.file.StandardWatchEventKinds;
 import java.nio.file.WatchEvent;
 import java.nio.file.WatchKey;
@@ -30,10 +20,18 @@ import java.util.Queue;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import photato.core.entities.PhotatoFolder;
 import photato.core.entities.PhotatoMedia;
+import photato.core.entities.PictureInfos;
+import photato.core.metadata.IMetadataAggregator;
+import photato.core.metadata.Metadata;
 import photato.core.resize.fullscreen.IFullScreenImageGetter;
 import photato.core.resize.thumbnails.IThumbnailGenerator;
+import photato.helpers.FileHelper;
 import photato.helpers.MediaHelper;
+import photato.helpers.SearchQueryHelper;
+import photato.helpers.Tuple;
 
 public class PhotatoFilesManager implements Closeable {
 

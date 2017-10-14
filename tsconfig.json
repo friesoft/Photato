@@ -3,13 +3,11 @@
         "module": "system",
         "noImplicitAny": true,
         "removeComments": true,
-        
         "preserveConstEnums": true,
-        "outFile": "src/main/resources/js/app.js",
-        "sourceMap": true
+        "outFile": "src/main/resources/static/js/app.js"
     },
     "include": [
-        "src/main/resources/js/**/*"
+        "src/main/ts/**/*"
     ],
     "exclude": [
         "node_modules",

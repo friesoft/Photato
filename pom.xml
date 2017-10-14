@@ -80,8 +80,51 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
+			<plugin>
+				<groupId>nl.geodienstencentrum.maven</groupId>
+				<artifactId>sass-maven-plugin</artifactId>
+				<version>2.25</version>
+				<executions>
+					<execution>
+						<id>generate-css</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>update-stylesheets</goal>
+						</goals>
+						<configuration>
+							<sassSourceDirectory>src/main/sass</sassSourceDirectory>
+							<destination>src/main/resources/static/css</destination>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+<!-- 
+			<plugin>
+				<groupId>com.samaxes.maven</groupId>
+				<artifactId>minify-maven-plugin</artifactId>
+				<configuration>
+					<charset>UTF-8</charset>
+					<nosuffix>true</nosuffix>
+					<webappTargetDir>${project.build.directory}/css-min</webappTargetDir>
+				</configuration>
+				<executions>
+					<execution>
+						<id>minify-css</id>
+						<goals>
+							<goal>minify</goal>
+						</goals>
+						<configuration>
+							<webappSourceDir>${project.build.directory}</webappSourceDir>
+							<cssSourceDir>css</cssSourceDir>
+							<cssSourceIncludes>
+								<include>*.css</include>
+							</cssSourceIncludes>
+							<skipMerge>true</skipMerge>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+-->
 		</plugins>
 	</build>
 

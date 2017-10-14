@@ -2,15 +2,17 @@ package photato;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan
+@EnableAutoConfiguration
 public class PhotatoApplication {
 
-
-
 	@Autowired
-	private static PhotatoConfig config;
+	private PhotatoConfig config;
 
 	public static void main(String[] args) {
 		SpringApplication.run(PhotatoApplication.class, args);

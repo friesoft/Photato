@@ -10,6 +10,11 @@ Moving the project to
 * Linux compatibility (original repository only supports windows exif tool)
 
 
+# Requirements Development
+Maven >= 3.7.0
+IDE with Java 9 Support (e.g Eclipse Oxygen)
+JDK 9
+
 # Photato
 
 Photato aims to be a self-hosted photo gallery, accessible through a **responsive WebUI**. 

@@ -5,7 +5,9 @@ Moving the project to
 * Maven
 * Spring Boot
 * Spring Framework 5 (Security, HATEOAS)
-* MongoDB backend
+* (MongoDB backend)
+* H2 database (persisted to file) with flyway
+* Typescript + SASS
 * Thymeleaf
 * Linux compatibility (original repository only supports windows exif tool)
 

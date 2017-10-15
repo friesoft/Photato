@@ -1,0 +1,1 @@
+alter table user add column role char(1) not null default 'U';

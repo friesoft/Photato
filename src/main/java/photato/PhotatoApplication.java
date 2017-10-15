@@ -1,14 +1,20 @@
 package photato;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import photato.core.entities.UserRepository;
+
 @SpringBootApplication
-public class PhotatoApplication {
+public class PhotatoApplication implements CommandLineRunner {
 
 	@Autowired
 	private PhotatoConfig config;
+
+	@Autowired
+	private UserRepository userRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(PhotatoApplication.class, args);
@@ -42,5 +48,9 @@ public class PhotatoApplication {
 	*/
 	}
 
+	@Override
+	public void run(String... args) throws Exception {
+		userRepository.findAll().forEach((p) -> System.out.println(p));
+	}
 
 }

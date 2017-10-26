@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/friesoft/Photato.svg?branch=master)](https://travis-ci.org/friesoft/Photato)
+
 # Fork
 **Completely broken atm!**
 Moving the project to 

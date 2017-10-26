@@ -11,6 +11,11 @@
 		<version>2.0.0.M5</version>
 	</parent>
 
+	<scm>
+		<connection>scm:git:git@github.com:friesoft/Photato.git</connection>
+		<developerConnection>scm:git:git@github.com:friesoft/Photato.git</developerConnection>
+		<url>https://github.com/friesoft/Photato</url>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

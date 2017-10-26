@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/friesoft/Photato.svg?branch=master)](https://travis-ci.org/friesoft/Photato)
+[![Build Status](https://travis-ci.org/friesoft/Photato.svg?branch=master)](https://travis-ci.org/friesoft/Photato) [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=org.friesoft:Photato)](https://sonarcloud.io/dashboard/index/org.friesoft:Photato)
+
 
 # Fork
 **Completely broken atm!**

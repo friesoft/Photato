@@ -2,6 +2,9 @@ language: java
 jdk: oraclejdk9
 sudo: false
 
+before_install:
+  - echo "MAVEN_OPTS='--add-modules java.xml.bind'" > ~/.mavenrc
+
 addons:
   sonarcloud:
     organization: "friesoft-github"
